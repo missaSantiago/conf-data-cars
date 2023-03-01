@@ -22,7 +22,7 @@ spring:
           predicates:
             - Path=/users/**
           filters:
-            - name: AuthFilter
+            - AuthFilter
         - id: car-service
           uri: lb://car-service
           predicates:
